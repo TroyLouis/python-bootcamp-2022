@@ -65,6 +65,55 @@ def lists():
     print(new_list)
     new_list.reverse()
     print(new_list)
+    print(new_list[2:])
 
+def dict():
+    my_dict = {'troy': 900, 'greg': 222}
+    print(my_dict['troy'])
+
+    my_dict['troy'] = 50
+    print(my_dict['troy'])
+
+    my_dict['Sarah'] = 500
+    print(my_dict)
+
+    my_dict['Tracy'] = (1,2)
+    print(my_dict['Tracy'])
+    print(my_dict['Tracy'][1])
+
+    new_dict = {'a': 100, 'b': 200, 'c': 300}
+    print(new_dict.keys())
+    print(new_dict.values())
+    print(new_dict.items())
+    print(new_dict.pop('a'))
+    print(new_dict)
+
+def tuples():
+    #immutable
+    t = (2, 4, 5, 5, 5, 5)
+    print(t[-1])
+    print(t.count(5))
+    print(t.index(4))
+
+def sets():
+    #unordered unique elements
+    set1 = set()
+    print(type(set1))
+    set1.add(500)
+    set1.add(501)
+    set1.add(501) #doesn't throw error but doesn't add it
+    print(set1)
+
+    my_list = [1,2,3,4,5,5,5,5,6,6,6,7,8,9,0,1,1,1]
+    my_set = set(my_list)
+    print(my_set)
+
+def bool():
+
+    print(1 > 2)
+    print('a' == 'b')
+    print('a' == 'a')
+    print(5 > -2)
 
 if __name__ == "__main__":
+    bool()
