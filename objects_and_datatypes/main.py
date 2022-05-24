@@ -116,7 +116,10 @@ def bool():
     print(5 > -2)
 
 def io():
-    my_file = open('myfile.txt')
+    with open('myfile.txt', 'r+') as f:
+        print(f.read())
+        f.write("\nfour on fourth")
+        f.close()
 
 if __name__ == "__main__":
     io()
