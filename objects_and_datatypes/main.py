@@ -115,5 +115,8 @@ def bool():
     print('a' == 'a')
     print(5 > -2)
 
+def io():
+    my_file = open('myfile.txt')
+
 if __name__ == "__main__":
-    bool()
+    io()
