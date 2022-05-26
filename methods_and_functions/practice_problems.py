@@ -33,7 +33,7 @@ def palindrome(s):
             return False
     return True
 
-palindrome = lambda pal: pal == pal[::-1]
+palindrome2 = lambda pal: pal == pal[::-1]
 
 if __name__ == "__main__":
     print(vol(2))
@@ -41,5 +41,5 @@ if __name__ == "__main__":
     print(unique_list([1,1,1,1,1,2,2,2,2,0]))
     print(unique([1,1,1,2,3,4,5,6,7,8,8]))
     print(multiply([1,1,1,5,6]))
-    print(palindrome('1ssawawass1'))
+    print(palindrome2('1ssawawass1'))
     print(palindrome('1ssawabwass1'))
