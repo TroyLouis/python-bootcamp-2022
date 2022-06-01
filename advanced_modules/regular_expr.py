@@ -25,5 +25,18 @@ result = re.search(phone_pattern, phone)
 #indexing for group() starts at 1 not 0
 print(result.group(1))
 
+print(re.search(r'cat|dog', 'the cat is here'))
+print(re.findall(r'.at', 'the cat in the hat splat there.'))
+# ends with
+print(re.findall(r'^\d', '1 is a number'))
+# starts with
+print(re.findall(r'\d$', 'a number is 4'))
+
+phrase = 'There are 3 integers in 345 if you were to write them indivdually.'
+#exclude digits, the plus sign packs them back up
+pattern = r'[^\d]+'
+print(re.findall(pattern,phrase))
+
+
 if __name__ == "__main__":
     pass
